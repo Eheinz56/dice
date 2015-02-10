@@ -1,7 +1,7 @@
 <!-- Program to choose a random student from one class of several
 
-	Brian Capouch
-	4 February 2015
+	Eric Heinzman
+	9 February 2015
 
 -->
 
@@ -30,14 +30,27 @@
 
       // Pick one at random
       var which = Math.floor(Math.random() * dice) + 1;
-
+      var roll2 = Math.floor(Math.random() * dice) +1;
+      var roll3 = Math.floor(Math.random() * dice) + 1;
+      var roll4 = Math.floor(Math.random() * dice) + 1;
+      var roll5 = Math.floor(Math.random() * dice) + 1;
+      var roll6 = Math.floor(Math.random() * dice) + 1;
       // Set string with value of result
 
       // Clear out the div, and then fill it with fresh
       // This is the wonderful, invisible work of jQuery
       $('#output').empty(); 
-      $('#output').append('<pre>' + result + '</pre>');
+      $('#output').append('<pre>' + which + '</pre>');
+
+      $('#output').append('<pre>' + roll2 + '</pre>');
+
+     $('#output').append('<pre>' + roll3 + '</pre>');
+     $('#output').append('<pre>' + roll4 + '</pre>');
+      $('#output').append('<pre>' + roll5 + '</pre>');
+
+     $('#output').append('<pre>' + roll6  + '</pre>');
       }
+
   </script>
 <div id="output"></div>
 </body>
